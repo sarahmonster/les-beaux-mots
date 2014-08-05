@@ -1,12 +1,11 @@
 # Site settings
 title: les beaux mots
 email: hi@sarahsemark.com
-description: "An experiment in lettering and language"
+description: "An experiment in lettering and language."
 baseurl: "/les-beaux-mots"
 url: "http://triggersandsparks.com"
 twitter_username: sarahsemark
 github_username:  sarahsemark
-name: "sarah semark"
 
 # Build settings
 markdown: kramdown

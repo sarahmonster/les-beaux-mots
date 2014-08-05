@@ -1,19 +1,7 @@
-<header class="row">
+<header class="row" id="site-header">
 
-  <div class="large-12 columns">
+  <div class="large-12 columns text-center">
     <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
   </div>
-
-    <div class="large-6 columns"> 
-      {{ site.description }} by <a href="{{ site.url }}">sarah semark</a>.
-    </div>
-
-    <nav class="site-nav large-6 columns">
-      {% for page in site.pages %}
-        {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-      {% endfor %}
-
-      | <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
-    </nav>
 
 </header>

@@ -1,3 +1,17 @@
+<footer class="row" id="site-footer">
+  <div class="large-6 columns"> 
+      {{ site.description }}
+    </div>
+
+    <nav class="site-nav large-6 columns text-right">
+      {% for page in site.pages %}
+        {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+      {% endfor %}
+
+      | <a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
+    </nav>
+</footer>
+
 <script src="{{ "/bower_components/jquery/dist/jquery.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/bower_components/foundation/js/foundation.min.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/js/app.js" | prepend: site.baseurl }}"></script>
