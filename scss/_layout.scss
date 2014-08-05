@@ -1,12 +1,36 @@
+// HEADER
 #site-header {
     border-bottom: 2px solid $secondary-color;
     padding: 1rem 0;
 }
 
+
+// CONTENT
 #site-content {
     margin: 4rem auto;
+
+    // Posts
+    header {
+       margin: -2rem 0 2rem -2rem;
+       background: rgba(255,255,255,.5);
+       border: 1px solid $secondary-color;
+       padding: 20px;
+    }
+    .post-meta {
+        display: inline-block;
+        background: $primary-color;
+        padding: 4px 10px; 
+        color: $secondary-color;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: .8rem;
+        line-height: 1rem;
+    }
 }
 
+
+// FOOTER
 #site-footer {
     border-top: 2px solid $secondary-color;
     padding: 1rem 0;
@@ -18,7 +42,7 @@
 
 
 
-// Typography
+// TYPOGRAPHY
 h1 {
     font-weight: 700;
 }
@@ -26,3 +50,7 @@ h2 {
     font-weight: 400;
     font-style: italic;
 }
+
+
+
+

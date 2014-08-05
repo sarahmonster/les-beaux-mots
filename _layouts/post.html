@@ -1,35 +1,35 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header>
-    <div class="post-meta">
-        {{ page.tags }} 
-        &bull; {{ page.date | date: "%A, %B" }}
-        {% assign d = page.date | date: "%-d" %}
-        {% case d %}
-            {% when '1' or '21' or '31' %}{{ d }}st
-            {% when '2' or '22' %}{{ d }}nd
-            {% when '3' or '23' %}{{ d }}rd
-            {% else %}{{ d }}th
-        {% endcase %}
-        {{ page.date | date: "%Y " }}
+<img class="large-12 columns" src="{{ site.baseurl }}/images/{{ page.image }}" alt="{{ page.title }}">
 
-        {% if page.author %} 
-            • {{ page.author }}
-        {% endif %}
-        {% if page.meta %} 
-            • {{ page.meta }}
-        {% endif %}
-    </div>
-    <h1>{{ page.title }}</h1>
-    <h2>{{ page.subtitle }}</h2>
+<header class="large-8 columns">
+<div class="post-meta">
+    {{ page.tags }} 
+    &middot; {{ page.date | date: "%A, %B" }}
+    {% assign d = page.date | date: "%-d" %}
+    {% case d %}
+        {% when '1' or '21' or '31' %}{{ d }}st
+        {% when '2' or '22' %}{{ d }}nd
+        {% when '3' or '23' %}{{ d }}rd
+        {% else %}{{ d }}th
+    {% endcase %}
+    {{ page.date | date: "%Y " }}
 
-  </header>
+    {% if page.author %} 
+        &middot; {{ page.author }}
+    {% endif %}
+    {% if page.meta %} 
+        &middot; {{ page.meta }}
+    {% endif %}
+</div>
+<h1>{{ page.title }}</h1>
+<h2>{{ page.subtitle }}</h2>
+</header>
 
-  <article>
-  {{ content }}
-  </article>
+<article class="large-12 columns">
+    {{ content }}
+</article>
 
 </div>
