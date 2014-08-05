@@ -6,6 +6,7 @@ baseurl: "/les-beaux-mots"
 url: "http://triggersandsparks.com"
 twitter_username: sarahsemark
 github_username:  sarahsemark
+name: "sarah semark"
 
 # Build settings
 markdown: kramdown
