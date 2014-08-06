@@ -3,8 +3,8 @@ layout: post
 title:  "Hello, Sailor."
 subtitle: "I love an opportunity to use a come-on that's at once vaguely anachronistic & subtly filthy."
 date:   2014-08-15 13:37:35
-tags: lettering
-image: uncial.jpg
+tags: lettering, english
+image: hello-sailor.jpg
 ---
 
 I once met a sailor in a bar. He had beautiful blue eyes and washboard abs.
