@@ -9,6 +9,12 @@
 #site-content {
     margin: 4rem auto;
 
+    // Homepage
+    ul.posts {
+        display: none;
+        @include block-grid(3);
+    }
+
     // Posts
     header {
        margin: -2rem 0 2rem -2rem;
