@@ -27,6 +27,19 @@
         font-size: .8rem;
         line-height: 1rem;
     }
+
+    footer {
+        a {
+            @include button;
+            display: inline-block;
+            width: calc(50% - 10px);
+            &.previous {margin-right: 5px;}
+            &.next {
+                margin-left: 5px;
+                float: right;
+            }
+        }
+    }
 }
 
 
