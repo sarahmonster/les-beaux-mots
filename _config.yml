@@ -10,3 +10,5 @@ github_username:  sarahsemark
 # Build settings
 markdown: kramdown
 permalink: pretty
+exclude: [assets]
+# future: false
